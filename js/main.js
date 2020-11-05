@@ -12,7 +12,7 @@ fetch(
     .then((data) => {
       let nameBog = data.name;
     //   console.log(nameBog);
-      nombreBog.innerHTML = nameBog;
+      nombreBog.innerHTML = `${nameBog.toUpperCase()}`;
   
       let temperatureBog = data.main.temp;
     //   console.log(temperaturaBog);
@@ -42,7 +42,9 @@ fetch(
     .then((response) => response.json())
     .then((data) => {
       let namePar = data.name;
-      nombrePar.innerHTML = namePar;
+      nombrePar.innerHTML = `${namePar.toUpperCase()}`;
+
+      
   
       let temperaturePar = data.main.temp;
       temperaturePar = temperaturePar - 273.15;
@@ -68,23 +70,23 @@ fetch(
   )
     .then((response) => response.json())
     .then((data) => {
-      let dia1 = data.list[3].dt_txt;
-    //   console.log(dia1);
+    let dia1 = data.list[7].dt_txt;
+      // console.log(dia1);
       moment.locale('es');
       let dateTime = moment(dia1);
       let newDia1 = dateTime.format('dddd');
     //   console.log(newDia1);  
-      fechaDia1.innerHTML = newDia1;
+      fechaDia1.innerHTML = `${newDia1.toUpperCase()}`;
   
-      let dia1TempMin = data.list[3].main.temp_min;
+      let dia1TempMin = data.list[5].main.temp_min;
       dia1TempMin = dia1TempMin - 273.15;
-      tempMinDia1.innerHTML = `Temperatura mínima: ${dia1TempMin.toFixed()} °C`;
+      tempMinDia1.innerHTML = `${dia1TempMin.toFixed()} °C`;
   
-      let dia1TempMax = data.list[3].main.temp_max;
+      let dia1TempMax = data.list[7].main.temp_max;
       dia1TempMax = dia1TempMax - 273.15;
-      tempMaxDia1.innerHTML = `Temperaturamáxima: ${dia1TempMax.toFixed()} °C`;
+      tempMaxDia1.innerHTML = ` ${dia1TempMax.toFixed()} °C`;
   
-      let dia1Description = data.list[3].weather[0].description;
+      let dia1Description = data.list[7].weather[0].description;
       descripcionDia1.innerHTML = dia1Description;
   
       let dia1Icons = data.list[3].weather[0].icon;
@@ -104,24 +106,24 @@ fetch(
   )
     .then((response) => response.json())
     .then((data) => {
-      let dia2 = data.list[11].dt_txt;    
+      let dia2 = data.list[15].dt_txt;    
       moment.locale('es');
       let dateTime = moment(dia2);
       let newDia2 = dateTime.format('dddd');
-      fechaDia2.innerHTML = newDia2;
+      fechaDia2.innerHTML = `${newDia2.toUpperCase()}`;
 
-      let dia2TempMin = data.list[11].main.temp_min;
+      let dia2TempMin = data.list[13].main.temp_min;
       dia2TempMin = dia2TempMin - 273.15;
-      tempMinDia2.innerHTML = `Temperatura mínima: ${dia2TempMin.toFixed()} °C`;
+      tempMinDia2.innerHTML = ` ${dia2TempMin.toFixed()} °C`;
   
-      let dia2TempMax = data.list[11].main.temp_max;
+      let dia2TempMax = data.list[15].main.temp_max;
       dia2TempMax = dia2TempMax - 273.15;
-      tempMaxDia2.innerHTML = `Temperaturamáxima: ${dia2TempMax.toFixed()} °C`;
+      tempMaxDia2.innerHTML = ` ${dia2TempMax.toFixed()} °C`;
     
-      let dia2Description = data.list[11].weather[0].description;
+      let dia2Description = data.list[15].weather[0].description;
       descripcionDia2.innerHTML = dia2Description;
   
-      let dia2Icons = data.list[11].weather[0].icon;
+      let dia2Icons = data.list[15].weather[0].icon;
       iconosDia2.innerHTML = `<img src="https://openweathermap.org/img/wn/${dia2Icons}@2x.png"/>`;
     });
 
@@ -138,23 +140,23 @@ fetch(
   )
     .then((response) => response.json())
     .then((data) => {
-      let dia3 = data.list[19].dt_txt;
+      let dia3 = data.list[23].dt_txt;
       moment.locale('es');
       let dateTime = moment(dia3);
       let newDia3 = dateTime.format('dddd');
-      fechaDia3.innerHTML = newDia3;
+      fechaDia3.innerHTML = `${newDia3.toUpperCase()}`;
 
-      let dia3TempMin = data.list[19].main.temp_min;
+      let dia3TempMin = data.list[21].main.temp_min;
       dia3TempMin = dia3TempMin - 273.15;
-      tempMinDia3.innerHTML = `Temperatura mínima: ${dia3TempMin.toFixed()} °C`;
+      tempMinDia3.innerHTML = ` ${dia3TempMin.toFixed()} °C`;
   
-      let dia3TempMax = data.list[19].main.temp_max;
+      let dia3TempMax = data.list[23].main.temp_max;
       dia3TempMax = dia3TempMax - 273.15;
-      tempMaxDia3.innerHTML = `Temperaturamáxima: ${dia3TempMax.toFixed()} °C`;
+      tempMaxDia3.innerHTML = `${dia3TempMax.toFixed()} °C`;
     
-      let dia3Description = data.list[19].weather[0].description;
+      let dia3Description = data.list[23].weather[0].description;
       descripcionDia3.innerHTML = dia3Description;
   
-      let dia3Icons = data.list[19].weather[0].icon;
+      let dia3Icons = data.list[23].weather[0].icon;
       iconosDia3.innerHTML = `<img src="https://openweathermap.org/img/wn/${dia3Icons}@2x.png"/>`;
     });

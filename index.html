@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prueba Gradiweb</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="sass/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -13,51 +13,62 @@
     />
   </head>
   <body>
-    <div class="container-bogota">
-      <div class="card mt-5 p-3" id="container-card-bogota">
-        <h1 class="name_" id="name-bog"></h1>
-        <p class="temp_" id="temp-bog"></p>
+    <div class="container">
+      <div class="card_bogota mt-5 p-3 text-start text-black " id="container-card-bogota">
+        <h1 class="name_ " id="name-bog"></h1>
+        <p class="temp_ " id="temp-bog"></p>
         <p class="descrip_" id="descrip-bog"></p>
         <p class="ico_" id="ico-bog"></p>
       </div>
     </div>
 
-    <div class="container-paris">
-      <div class="card text-center mt-5 ml-5" id="container-card-paris">
-        <h1 class="name_" id="name-par"></h1>
-        <p class="temp_" id="temp-par"></p>
-        <p class="descrip_" id="descrip-par"></p>
-        <p class="ico_" id="ico-par"></p>
-      </div>
-    </div>
+    <div class="container-fluid d-flex f-column">
+    
 
-    <h1 class="d-flex p-5">Forecast de los próximos 3 días en Bogotá</h1>
+    
+    <div class="cards-container justify-content-start ml-5">
+      <h1 class=" info d-flex p-5">Bogotá 3 Days Forecast </h1>
 
-    <div class="container-forecast d-flex">
-      <div class="card text-center mt-5 ml-5" id="container-card-forecast1">
-        <h3 class="temp-min-dia1_" id="date-dia1"></h3>
-        <h5 class="temp-min-dia1_" id="temp-min-dia1"></h5>
-        <h5 class="temp-max-dia1_" id="temp-max-dia1"></h5>
-        <p class="descrip-dia1_" id="descrip-dia1"></p>
+      <div class="card" id="container-card-forecast1">
+        <div class="card-dia1">
+            <h2 class="temp-min-dia1_ mt-4" id="date-dia1"></h2> 
+        <h5 class="temp-min-dia1_ mt-4 d-column" id="temp-min-dia1"></h5>
+        <h5 class="temp-max-dia1_ d-column" id="temp-max-dia1"></h5>
+        <h6 class="descrip-dia1_ mt-4" id="descrip-dia1"></h6>
         <p class="ico-dia1_" id="ico-dia1"></p>
+        </div>
       </div>
 
-      <div class="card text-center mt-5 ml-5" id="container-card-forecast2">
-        <h3 class="temp-min-dia2_" id="date-dia2"></h3>
-        <h5 class="temp-min-dia2_" id="temp-min-dia2"></h5>
+      <div class="card " id="container-card-forecast2">
+        <div class="card-dia2">
+        <h2 class="temp-min-dia2_ mt-4" id="date-dia2"></h2>
+        <h5 class="temp-min-dia2_ mt-4" id="temp-min-dia2"></h5>
         <h5 class="temp-max-dia2_" id="temp-max-dia2"></h5>
-        <p class="descrip-dia2_" id="descrip-dia2"></p>
+        <h6 class="descrip-dia2_ mt-4" id="descrip-dia2"></h6>
         <p class="ico-dia2_" id="ico-dia2"></p>
       </div>
+    </div>
 
-      <div class="card text-center mt-5 ml-5" id="container-card-forecast3">
-        <h3 class="temp-min-dia3_" id="date-dia3"></h3>
-        <h5 class="temp-min-dia3_" id="temp-min-dia3"></h5>
+      <div class="card"  id="container-card-forecast3">
+        <div class="card-dia3">
+        <h2 class="temp-min-dia3_ mt-4" id="date-dia3"></h2>
+        <h5 class="temp-min-dia3_ mt-4" id="temp-min-dia3"></h5>
         <h5 class="temp-max-dia3_" id="temp-max-dia3"></h5>
-        <p class="descrip-dia3_" id="descrip-dia3"></p>
+        <h6 class="descrip-dia3_ mt-4" id="descrip-dia3"></h6>
         <p class="ico-dia3_" id="ico-dia3"></p>
       </div>
+      </div>
     </div>
+      <div class="container-paris">
+        <div class="card text-center mt-5" id="container-card-paris">
+          <h2 class="name_" id="name-par"></h2>
+          <p class="temp_" id="temp-par"></p>
+          <p class="descrip_" id="descrip-par"></p>
+          <p class="ico_" id="ico-par"></p>
+        </div>
+      
+    </div>
+  </div>
 
     <script type="text/javascript" src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.0/moment.min.js"></script>
