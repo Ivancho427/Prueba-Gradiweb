@@ -1,0 +1,35 @@
+    
+*{
+  margin:0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+body{
+  font-family: "Nunito",sans-serif;
+  /* background-color: #d41414; */
+}
+
+#container-card-bogota{
+    background-color: rgb(3, 3, 26);
+    background: url(../images/imagen-header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 170%;
+    opacity: 0.6;
+    border-radius: 20px;
+    color: rgb(5, 13, 66); 
+}
+
+
+#container-card-paris{
+    width: 50%;
+    height: 50%;
+    /* display: flex;
+    flex-direction: row;
+    justify-items: center; */
+    /* background-color: rgb(3, 3, 26); */
+    border-radius: 20px;
+    color: rgb(20, 20, 20); 
+    background: linear-gradient(to bottom, #ddf2f5, #17a2b8);
+}
