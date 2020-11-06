@@ -153,13 +153,6 @@ body {
   }
 }
 
-@media (max-width: 1100px) {
-  #container-card-paris {
-    width: 100%;
-    margin-left: 0px;
-  }
-}
-
 .footer {
   margin-top: 120px;
   -webkit-transform: skewY(5deg);
