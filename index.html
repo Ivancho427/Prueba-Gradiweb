@@ -14,64 +14,67 @@
   </head>
   <body>
     <div class="container">
-      <div class="card_bogota mt-5 p-3 text-start text-black " id="container-card-bogota">
-        <h1 class="name_ " id="name-bog"></h1>
-        <p class="temp_ " id="temp-bog"></p>
-        <p class="descrip_" id="descrip-bog"></p>
+      <div class="card_bogota mt-5 p-3 text-start" id="container-card-bogota">
+        <h1 class="name_" id="name-bog"></h1>
+        <h5 class="temp_" id="temp-bog"></h5>
+        <h5 class="descrip_" id="descrip-bog"></h5>
         <p class="ico_" id="ico-bog"></p>
       </div>
     </div>
 
-    <div class="container-fluid d-flex f-column">
-    
+    <div class="container-fluid d-flex">
+      <div class="cards-container justify-content-start ml-5">
+        <div class="container">
+          <div class="card text-center mt-5" id="container-card-paris">
+            <h2 class="name_" id="name-par"></h2>
+            <h5 class="temp_" id="temp-par"></h5>
+            <h5 class="hum_" id="hum-par"></h5>
+            <h5 class="descrip_" id="descrip-par"></h5>
+            <p class="ico_" id="ico-par"></p>
+          </div>
+        </div>
+        <h1 class="info">Bogotá 3 Days Forecast</h1>
 
-    
-    <div class="cards-container justify-content-start ml-5">
-      <h1 class=" info d-flex p-5">Bogotá 3 Days Forecast </h1>
+        <div class="card" id="container-card-forecast1">
+          <div class="card-dia1">
+            <h2 class="temp-min-dia1_ mt-4" id="date-dia1"></h2>
+            <h5 class="temp-min-dia1_ mt-4 d-column" id="temp-min-dia1"></h5>
+            <h5 class="temp-max-dia1_ d-column" id="temp-max-dia1"></h5>
+            <h6 class="descrip-dia1_ mt-4" id="descrip-dia1"></h6>
+            <p class="ico-dia1_" id="ico-dia1"></p>
+          </div>
+        </div>
 
-      <div class="card" id="container-card-forecast1">
-        <div class="card-dia1">
-            <h2 class="temp-min-dia1_ mt-4" id="date-dia1"></h2> 
-        <h5 class="temp-min-dia1_ mt-4 d-column" id="temp-min-dia1"></h5>
-        <h5 class="temp-max-dia1_ d-column" id="temp-max-dia1"></h5>
-        <h6 class="descrip-dia1_ mt-4" id="descrip-dia1"></h6>
-        <p class="ico-dia1_" id="ico-dia1"></p>
+        <div class="card" id="container-card-forecast2">
+          <div class="card-dia2">
+            <h2 class="temp-min-dia2_ mt-4" id="date-dia2"></h2>
+            <h5 class="temp-min-dia2_ mt-4" id="temp-min-dia2"></h5>
+            <h5 class="temp-max-dia2_" id="temp-max-dia2"></h5>
+            <h6 class="descrip-dia2_ mt-4" id="descrip-dia2"></h6>
+            <p class="ico-dia2_" id="ico-dia2"></p>
+          </div>
+        </div>
+
+        <div class="card" id="container-card-forecast3">
+          <div class="card-dia3">
+            <h2 class="temp-min-dia3_ mt-4" id="date-dia3"></h2>
+            <h5 class="temp-min-dia3_ mt-4" id="temp-min-dia3"></h5>
+            <h5 class="temp-max-dia3_" id="temp-max-dia3"></h5>
+            <h6 class="descrip-dia3_ mt-4" id="descrip-dia3"></h6>
+            <p class="ico-dia3_" id="ico-dia3"></p>
+          </div>
+        </div>
+
+        <div class="footer">
+          <h4>
+            Por Iván Darío Mejía | Prueba Técnica para la empresa Gradiweb |
+            Medellín | Colombia | © 2020 |
+          </h4>
         </div>
       </div>
-
-      <div class="card " id="container-card-forecast2">
-        <div class="card-dia2">
-        <h2 class="temp-min-dia2_ mt-4" id="date-dia2"></h2>
-        <h5 class="temp-min-dia2_ mt-4" id="temp-min-dia2"></h5>
-        <h5 class="temp-max-dia2_" id="temp-max-dia2"></h5>
-        <h6 class="descrip-dia2_ mt-4" id="descrip-dia2"></h6>
-        <p class="ico-dia2_" id="ico-dia2"></p>
-      </div>
     </div>
-
-      <div class="card"  id="container-card-forecast3">
-        <div class="card-dia3">
-        <h2 class="temp-min-dia3_ mt-4" id="date-dia3"></h2>
-        <h5 class="temp-min-dia3_ mt-4" id="temp-min-dia3"></h5>
-        <h5 class="temp-max-dia3_" id="temp-max-dia3"></h5>
-        <h6 class="descrip-dia3_ mt-4" id="descrip-dia3"></h6>
-        <p class="ico-dia3_" id="ico-dia3"></p>
-      </div>
-      </div>
-    </div>
-      <div class="container-paris">
-        <div class="card text-center mt-5" id="container-card-paris">
-          <h2 class="name_" id="name-par"></h2>
-          <p class="temp_" id="temp-par"></p>
-          <p class="descrip_" id="descrip-par"></p>
-          <p class="ico_" id="ico-par"></p>
-        </div>
-      
-    </div>
-  </div>
 
     <script type="text/javascript" src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.0/moment.min.js"></script>
-    
   </body>
 </html>

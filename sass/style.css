@@ -19,19 +19,16 @@ body {
   opacity: 0.9;
   border-radius: 20px;
   border: 4px solid #04688a;
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: "Balsamiq Sans", cursive;
   -webkit-box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.5);
   color: #04688a;
+  min-width: 300px;
 }
 
 #container-card-bogota:hover {
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
-}
-
-#container-card-bogota .name_ {
-  font-size: 3.5rem;
 }
 
 #container-card-bogota .temp_ {
@@ -42,24 +39,24 @@ body {
   font-size: 2.5rem;
 }
 
-.container-paris {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 100%;
-}
-
 #container-card-paris {
   background: linear-gradient(25deg, #90d5eb, #ffffff);
   border-radius: 30px;
-  width: 100%;
+  margin: 0;
+  width: 50%;
   height: 40%;
   color: #04688a;
   border: 4px solid #04688a;
+  margin-left: 62.5rem;
+}
+
+#container-card-paris:hover {
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
 }
 
 .cards-container {
-  width: 90%;
+  width: 100%;
   height: 80vh;
   display: -ms-grid;
   display: grid;
@@ -68,7 +65,7 @@ body {
   grid-gap: 1rem;
   margin-bottom: 100px;
   text-align: center;
-  font-family: 'Spectral SC', serif;
+  font-family: "Spectral SC", serif;
 }
 
 .cards-container .card {
@@ -126,6 +123,7 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#90d5eb), to(#ffffff));
   background: linear-gradient(to bottom, #90d5eb, #ffffff);
   border-top: 4px solid #04688a;
+  min-width: 400px;
 }
 
 .card {
@@ -134,6 +132,36 @@ body {
 }
 
 .info {
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
+  color: #04688a;
+}
+
+@media (max-width: 400px) {
+  #container-card-bogota {
+    margin-left: 90px;
+    background: linear-gradient(25deg, #90d5eb, #ffffff);
+  }
+  #container-card-bogota .name_ {
+    font-size: 25px;
+  }
+  #container-card-bogota .temp_ {
+    font-size: 22px;
+  }
+  #container-card-bogota .descrip_ {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #container-card-paris {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+.footer {
+  margin-top: 120px;
   -webkit-transform: skewY(5deg);
           transform: skewY(5deg);
   color: #04688a;
